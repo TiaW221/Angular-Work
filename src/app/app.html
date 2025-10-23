@@ -1,0 +1,8 @@
+<!--calling the component footer, which links to things in the footer folder-->
+<!--<app-footer [title]="'Example'" [counter]="counter2" ></app-footer>-->
+<!--<button (click)="addToCount()">Add to count</button>-->
+
+<!--create an input component-->
+<!--<app-footer [title]="'Example'" [counter]="counter2" [complete] ="complete2"></app-footer>-->
+<app-counter (counterChange)="onCounterChanged($event)"></app-counter>
+{{message}}
