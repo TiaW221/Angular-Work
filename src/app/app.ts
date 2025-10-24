@@ -6,17 +6,17 @@ import {Hello} from './hello/hello';
 // Importing a variable called footer from file on the left
 import {Footer} from './footer/footer';
 import {Counter} from './Counter/counter';
+import {InputComponent} from './Input/inputComponent';
 
 @Component({
   //the html tag I'm going to use is called app root
   selector: 'app-root',
-  imports: [RouterOutlet, Hello, Footer, Counter],
+  imports: [RouterOutlet, Hello, Footer, Counter, InputComponent],
   // this is the html it's part of
   templateUrl: './app.html',
   // this is the scss it's using
   styleUrl: './app.scss'
 })
-
 
 
 // A class called App
@@ -36,4 +36,4 @@ export class App {
     }
   }
 }
-//cowwabummer
+
