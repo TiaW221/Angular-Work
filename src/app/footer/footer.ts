@@ -12,7 +12,7 @@ import {Component, Input, OnChanges, OnDestroy, OnInit, SimpleChanges} from '@an
 export class Footer implements OnInit, OnChanges, OnDestroy{
   @Input()
   title: string = '';
-  // If i want to do this more efficiently, I can type
+  // If I want to do this more efficiently, I can type
   // title!: string;
 
   @Input()
@@ -37,14 +37,13 @@ export class Footer implements OnInit, OnChanges, OnDestroy{
     console.log('this footer component is destroyed')
   }
 
-
   ngOnChanges(changes: SimpleChanges) {
     console.log(this.counter);
+    console.log(changes);
     if(this.counter > 10){
       this.staticValue = 'new static value';
     }
   }
 }
 
-console.log("help")
 
