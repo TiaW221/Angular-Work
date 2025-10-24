@@ -1,5 +1,6 @@
 import {Component, Input, OnChanges, OnDestroy, OnInit, SimpleChanges} from '@angular/core';
 // This is what the footer is a part of and is using
+// a component is a self-contained reusable code block
 @Component({
   selector: 'app-footer',
   imports: [],
@@ -45,5 +46,5 @@ export class Footer implements OnInit, OnChanges, OnDestroy{
   }
 }
 
-// working tree not clean
+console.log("help")
 
